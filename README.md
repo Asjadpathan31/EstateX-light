@@ -16,8 +16,8 @@ venv\Scripts\activate        # Windows
 source venv/bin/activate     # Mac/Linux
 
 pip install -r requirements.txt
-python run.py                # Server starts on http://localhost:5000
 python seed.py               # Seed 300 properties (run ONCE)
+python run.py                # Server starts on http://localhost:5000
 ```
 
 ### Frontend (Terminal 2)
@@ -123,45 +123,12 @@ EstateX/
 
 ---
 
-## 📌 GitHub Guide (for Asjadpathan31/EstateX)
+## Repository safety
 
-```bash
-# Step 1: Clone your existing repo
-git clone https://github.com/Asjadpathan31/EstateX.git
-cd EstateX
+- Clone the repository into a new folder; do not delete or overwrite an existing repository's contents as part of setup.
+- Configure production secrets using environment variables. The demo accounts above are for local seeded development only; change or disable them before any public deployment.
+- Keep the frontend and backend setup steps separate as described above.
 
-# Step 2: Delete old files (keep .git folder)
-git rm -rf .
-git commit -m "chore: remove old files"
+## Author
 
-# Step 3: Copy new project files into this folder
-# (Copy everything from EstateX-Final/ into EstateX/)
-
-# Step 4: Add all files
-git add .
-git commit -m "feat: complete EstateX v3 — premium light theme, 300 properties, JWT auth"
-git push origin main
-```
-
-### Recommended commit sequence (for teacher):
-```bash
-# Day 1
-git add backend/app/models.py backend/app/__init__.py backend/app/config.py
-git commit -m "Day 1: Setup Flask app with SQLAlchemy models (User, Property)"
-
-# Day 2  
-git add backend/app/auth.py backend/run.py
-git commit -m "Day 2: Add JWT authentication — login, signup, refresh endpoints"
-
-# Day 3
-git add backend/app/property_routes.py backend/seed.py
-git commit -m "Day 3: Property CRUD with filtering, pagination, and seed data"
-
-# Day 4
-git add backend/app/review_routes.py backend/app/user_routes.py
-git commit -m "Day 4: Add reviews system and user profile management"
-
-# Day 5
-git add frontend/
-git commit -m "Day 5: Complete React frontend — light theme, all pages, animations"
-```
+Asjad Pathan · [GitHub](https://github.com/Asjadpathan31) · [Portfolio](https://asjadpathan31.github.io/portfolio/)
